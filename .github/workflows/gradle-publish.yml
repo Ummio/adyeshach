@@ -26,7 +26,7 @@ jobs:
       run: chmod +x gradlew
 
     - name: Build with Gradle  # 使用Gradle Wrapper构建项目
-      run: ./gradlew build
+      run: ./gradlew build --stacktrace --info
 
     - name: Archive Jar files  # 将构建好的jar文件存档
       uses: actions/upload-artifact@v3
